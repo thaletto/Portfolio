@@ -8,13 +8,41 @@ const config: Config = {
   ],
   theme: {
     extend: {
-      backgroundImage: {
-        "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",
-        "gradient-conic":
-          "conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))",
+      colors: {
+        charcoal: {
+          dark: "#233831",
+          light: "#234138",
+          DEFAULT: "#233831",
+        },
+        customGreen: "#8FDCC2",
+        goldenYellow: "#FFDF00",
+      },
+      boxShadow: {
+        custom: "0 4px 30px rgba(0, 0, 0, 0.1)",
+      },
+      backdropBlur: {
+        "3.4": "3.4px",
+      },
+      width: {
+        "90p": "90%",
+        "85p": "85%",
+        "80p": "80%",
+        "75p": "75%",
+        "60p": "60%",
+        "2/3": "66.66%",
+        "1/3": "33.33%",
+      },
+      keyframes: {
+        scrollDown: {
+          '0%, 100%': { transform: 'translateY(0)' },
+          '50%': { transform: 'translateY(10px)' },
+        },
+      },
+      animation: {
+        scrollDown: 'scrollDown 1.5s ease-in-out infinite',
       },
     },
   },
-  plugins: [],
+  plugins: [require("tailwindcss-filters")],
 };
 export default config;

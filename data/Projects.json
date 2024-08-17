@@ -1,0 +1,48 @@
+[
+  {
+    "name": "Lung Nodule Detection",
+    "id": "05",
+    "date": "May 2024",
+    "skills": ["Image Processing", "CNN", "Transformer", "MIC"],
+    "url": "https://drive.google.com/file/d/1MMyAyVqaz-J1B97uG0dJpVLcFNee7wgg/view",
+    "notes": "Trained CNN based models YOLOv5, DETR and VNet for detecting complex or irregular lung nodule detection from computer tomography scancs. Also developed a shape modelling algorithm and infused with the best of the three model YOLOv5 to tackle the irregularites and complex shapes in the lung nodules. This project was the official final year thesis project of my B.Tech CSE course."
+  },
+  {
+    "name": "Lense",
+    "id": "04",
+    "date": "Oct 2023",
+    "skills": [
+      "Android App Development",
+      "Kotlin",
+      "Jetpack Compose",
+      "Firebase",
+      "Image Classification"
+    ],
+    "url": "https://github.com/thaletto/Lense",
+    "notes": "Built a native android application using Kotlin and Jetpack Compose, with open source on-device image classification and image description models baked in. Designed with the EfficientNet tensorflow lite model trained on the ImageNet dataset, the application was able to classify products successfully, 70% of the time. The app also had an API based pre-trained GPT-2 image captioning model which helped in generating description for the product."
+  },
+  {
+    "name": "News Writer",
+    "id": "03",
+    "date": "Oct 2023",
+    "skills": ["Transformer", "NLP", "Gradio", "LangChain"],
+    "url": "#",
+    "notes": "News Writer, a AI web application made to write news articles for a given title. Google Flan t5 XXL (11B) and Microsoft Phi 1.5 (1.5B) acted as the backbone of the app. Langchain helped in creating a pipeline and Gradio helped in the frontend."
+  },
+  {
+    "name": "Parkinson's Disease Detection",
+    "id": "02",
+    "date": "Nov 2022",
+    "skills": ["Pandas", "XGBoost", "SVM", "Linear Gradient", "MatplotLib"],
+    "url": "https://github.com/thaletto/Parkinson-Disease-Detection/",
+    "notes": "Designed supervised and unsupervised models such as SVM, Random Forest, XGBoost, Logistic Regression etc... and trained on parkinson's disease dataset publicly available in kaggle platform. Achieved a highest accuracy score about 80% and the lowest about 65%, tested on ten supervised and unsupervised ML models, with supervised models generally having a higher accuracy score."
+  },
+  {
+    "name": "Leave Management System",
+    "id": "01",
+    "date": "Jun 2022",
+    "skills": ["React", "Express.js", "MongoDB"],
+    "url": "#",
+    "notes": "Developed a web portal using React JS for frontend and Express JS for backend, which manages leave requests from the students and the respective handling of the requests by administration. Designed the database using UML, ERD, DFD diagrams and utilized MySQL in creating a relational database to store the details of students, staff and leave requests. Created multiple React components and implemented it via Lazy method which resulted in simplifying the code and increasing the overall performance. Followed and practiced Agile Methodology and tracked all the progress using Atlassian JIRA."
+  }
+]
