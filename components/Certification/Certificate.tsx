@@ -24,16 +24,16 @@ export default function Certificate({
           <LiaCertificateSolid className="text-5xl mt-1" />
         </div>
         <div>
-          <p className={acornLight.className + " text-2xl"}>
+          <p className={acornLight.className + " text-xl md:text-2xl"}>
             <strong>{name}</strong>
           </p>
-          <p className="text-xl">{provider}</p>
-          <p className="text-xl">{date}</p>
+          <p className="text-lg md:text-xl">{provider}</p>
+          <p className="text-lg md:text-xl">{date}</p>
           <div className="flex flex-row items-center mt-1 space-x-2">
             {skills.map((skill, index) => (
               <p
                 key={index}
-                className="lg:text-sm sm:text-xs text-xs text-balance bg-charcoal-light p-2 text-white rounded-full"
+                className="lg:text-sm sm:text-xs text-xs bg-charcoal-light p-2 text-white rounded-full"
               >
                 {skill}
               </p>

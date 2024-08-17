@@ -16,7 +16,7 @@ export default function ProjectDetail({ params }: { params: { id: string } }) {
   }
 
   return (
-    <div className="mt-16 mx-8 mb-8">
+    <div className="mt-16 mx-2 sm:mx-4 md:mx-8 mb-8">
       <h1 className={`${acornSemiBold.className} text-customGreen text-5xl mb-4`}>
         {project.name}
       </h1>
