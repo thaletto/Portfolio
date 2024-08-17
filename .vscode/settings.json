@@ -1,11 +1,12 @@
 {
   "files.exclude": {
     ".**": true,
+    "**.json": true,
     "**.mjs": true,
     "**.ts": true,
     "next**": true,
     "node**": true,
-    "package**": true,
+    "README**": true,
     "thaletto**": true
   }
 }
