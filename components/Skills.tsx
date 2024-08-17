@@ -38,7 +38,7 @@ import { MdDataExploration, MdAnalytics } from "react-icons/md";
 import { IoLogoFirebase } from "react-icons/io5";
 
 export default function Skills() {
-  const iconClass = "flex items-center text-2xl my-2 space-x-4 sm:space-x-8 md:space-x-8 md:space-y-4 lg:space-x-6 lg:space-y-0";
+  const iconClass = "grid grid-cols-6 sm:grid-cols-6 md:grid-cols-5 gap-4 mt-2 text-2xl";
   
   return (
     <div className="bg-charcoal-light rounded-lg h-full shadow-lg">
@@ -51,7 +51,7 @@ export default function Skills() {
           <p className={acornLight.className + " text-2xl text-customGreen"}>
             Languages
           </p>
-          <div className={`flex flex-wrap ${iconClass}`}>
+          <div className={iconClass}>
             <FaJava title="Java" />
             <SiPython title="Python" />
             <SiJavascript title="JavaScript" />
@@ -68,7 +68,7 @@ export default function Skills() {
           <p className={acornLight.className + " text-2xl text-customGreen"}>
             Frameworks
           </p>
-          <div className={`flex flex-wrap ${iconClass}`}>
+          <div className={iconClass}>
             <SiNextdotjs title="Next.js" />
             <SiReact title="React" />
             <SiNodedotjs title="Node.js" />
@@ -85,7 +85,7 @@ export default function Skills() {
           <p className={acornLight.className + " text-2xl text-customGreen"}>
             Data Science & AI
           </p>
-          <div className={`flex flex-wrap ${iconClass}`}>
+          <div className={iconClass}>
             <SiPandas title="Pandas" />
             <SiTensorflow title="TensorFlow" />
             <SiPytorch title="PyTorch" />
@@ -102,7 +102,7 @@ export default function Skills() {
           <p className={acornLight.className + " text-2xl text-customGreen"}>
             Tools and Software
           </p>
-          <div className={`flex flex-wrap ${iconClass}`}>
+          <div className={iconClass}>
             <SiVisualstudiocode title="Visual Studio Code" />
             <SiAndroidstudio title="Android Studio" />
             <SiIntellijidea title="Intellij Idea" />
@@ -121,7 +121,7 @@ export default function Skills() {
           <p className={acornLight.className + " text-2xl text-customGreen"}>
             Operating System
           </p>
-          <div className={`flex flex-wrap ${iconClass}`}>
+          <div className={iconClass}>
             <SiWindows11 title="Windows" />
             <SiLinux title="Linux" />
           </div>

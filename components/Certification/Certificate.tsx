@@ -33,7 +33,7 @@ export default function Certificate({
             {skills.map((skill, index) => (
               <p
                 key={index}
-                className="lg:text-sm sm:text-xs text-balance bg-charcoal-light p-2 text-white rounded-full"
+                className="lg:text-sm sm:text-xs text-xs text-balance bg-charcoal-light p-2 text-white rounded-full"
               >
                 {skill}
               </p>

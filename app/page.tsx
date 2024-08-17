@@ -33,7 +33,7 @@ export default function Home() {
             <p
               className={
                 acornSemiBold.className +
-                " text-7xl font-bold sm:text-6xl text-customGreen text-balance"
+                " text-6xl font-bold md:text-7xl text-customGreen text-balance"
               }
             >
               Hi, I&apos;m Laxman.
@@ -41,7 +41,7 @@ export default function Home() {
             <p
               className={
                 acornRegular.className +
-                " text-5xl sm:text-4xl text-customGreen text-balance"
+                " text-4xl md:text-4xl text-customGreen text-balance"
               }
             >
               A Software Developer.

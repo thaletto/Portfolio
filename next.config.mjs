@@ -4,15 +4,8 @@
  * @type {import('next').NextConfig}
  */
 export default {
-    output: 'export',
-    basePath: process.env.GITHUB_ACTIONS ? '/Portfolio' : '',
-    assetPrefix: process.env.GITHUB_ACTIONS ? '/Portfolio/' : '',
-    // Optional: Change links `/me` -> `/me/` and emit `/me.html` -> `/me/index.html`
-    // trailingSlash: true,
-   
-    // Optional: Prevent automatic `/me` -> `/me/`, instead preserve `href`
-    // skipTrailingSlashRedirect: true,
-   
-    // Optional: Change the output directory `out` -> `dist`
-    // distDir: 'dist',
-  }
+  output: 'export',
+  basePath: process.env.GITHUB_ACTIONS ? '/Portfolio' : '',
+  assetPrefix: process.env.GITHUB_ACTIONS ? '/Portfolio/' : '',
+  images: { unoptimized: true }
+}
