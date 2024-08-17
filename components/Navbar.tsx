@@ -16,7 +16,7 @@ export default function Navbar() {
   const currentPath = usePathname();
   const [isDropdownOpen, setIsDropdownOpen] = useState(false);
 
-  const linkClass = "flex items-center p-2 md:text-lg text-2xl";
+  const linkClass = "flex items-center p-2 text-xl sm:text-xl md:text-lg";
   const activeLinkClass = "bg-customGreen text-charcoal rounded-full";
   const inactiveLinkClass = "text-white";
 

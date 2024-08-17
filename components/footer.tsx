@@ -9,7 +9,7 @@ export default function Footer() {
     const [ishovered, setIsHovered] = useState(false);
     return (
         <footer className={tnw.className + ' w-full flex flex-row md:mb-48 sm:mb-8 relative'}>
-          <p className='ml-8 flex flex-row items-center'>
+          <p className='ml-2 sm:ml-4 md:ml-8 flex flex-row items-center'>
             <MdCopyright className='mb-1 mr-1' /> {new Date().getFullYear()} Laxman K R
           </p>
           <p 

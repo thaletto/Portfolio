@@ -7,7 +7,7 @@ export default function Contact() {
     return (
         <div>
             {/* Profile Photo */}
-            <div className="w-full flex flex-col lg:flex-row items-center justify-center sm:space-y-4 lg:space-y-0 space-x-4 mb-8">
+            <div className="w-full flex flex-col lg:flex-row items-center justify-center space-y-4 sm:space-y-4 lg:space-y-0 space-x-4 mb-8">
                 <div className="w-1/2">
                     <Image
                         src='/images/Profile.jpg'
@@ -18,8 +18,8 @@ export default function Contact() {
                     />
                 </div>
                 <div>
-                    <p className={acornRegular.className + " text-7xl text-customGreen"}>Laxman K R.</p>
-                    <p className={acornRegular.className + " text-5xl"}>a.k.a <span className="text-customGreen">thaletto</span>.</p>
+                    <p className={acornRegular.className + " text-4xl md:text-7xl text-customGreen"}>Laxman K R.</p>
+                    <p className={acornRegular.className + " text-3xl md:text-5xl"}>a.k.a <span className="text-customGreen">thaletto</span>.</p>
                     <div className="mt-4 space-y-2">
                         <p className="flex items-center text-slate-300"><MdLocationOn className="mr-2 text-2xl text-customGreen"/> Chennai, TN, IN</p>
                         <p className="text-slate-300"><a href="mailto:krlaxman03@gmail.com" target="_blank" rel="noopener noreferrer" className="flex items-center"><MdMail className="mr-2 text-2xl text-customGreen"/> krlaxman03@gmail.com</a></p>

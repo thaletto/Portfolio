@@ -1,7 +1,7 @@
 "use client";
 
 import { useEffect } from "react";
-import { useRouter } from "next/navigation"; // Updated import for App Router
+import { useRouter } from "next/navigation";
 import { acornSemiBold, acornLight } from "@/public/fonts/font";
 import projectsData from "@/data/Projects.json";
 
@@ -35,14 +35,14 @@ export default function Projects() {
         <p
           className={
             acornSemiBold.className +
-            " text-7xl sm:text-6xl text-customGreen text-balance"
+            " text-5xl md:text-7xl sm:text-6xl text-customGreen text-balance"
           }
         >
           My Projects.
         </p>
       </div>
 
-      <div className="grid grid-cols-1 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 mx-8 mb-8 gap-6 mt-10">
+      <div className="grid grid-cols-1 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 mx-1 sm:mx-4 mb-8 gap-6 mt-10">
         {projects.map((project) => (
           <div
             key={project.id}
@@ -61,7 +61,7 @@ export default function Projects() {
               {project.skills.map((skill, skillIndex) => (
                 <span
                   key={skillIndex}
-                  className="md:text-sm sm:text-xs bg-customGreen p-2 text-charcoal rounded-full"
+                  className="md:text-sm sm:text-xs text-xs bg-customGreen p-2 text-charcoal rounded-full"
                 >
                   {skill}
                 </span>
