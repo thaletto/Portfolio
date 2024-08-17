@@ -3,7 +3,7 @@
 /**
  * @type {import('next').NextConfig}
  */
-const nextConfig = {
+export default {
     output: 'export',
     basePath: process.env.GITHUB_ACTIONS ? '/Portfolio' : '',
     assetPrefix: process.env.GITHUB_ACTIONS ? '/Portfolio/' : '',
@@ -16,5 +16,3 @@ const nextConfig = {
     // Optional: Change the output directory `out` -> `dist`
     // distDir: 'dist',
   }
-   
-  module.exports = nextConfig
