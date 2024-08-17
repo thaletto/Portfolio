@@ -1,6 +1,5 @@
-
-
-/** @type {import('next').NextConfig} */
-const nextConfig = {};
-
-export default nextConfig;
+export default {
+    basePath: process.env.GITHUB_ACTIONS ? '/thaletto.github.io' : '',
+    assetPrefix: process.env.GITHUB_ACTIONS ? '/thaletto.github.io/' : '',
+    output: 'export'
+};

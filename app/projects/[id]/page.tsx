@@ -2,6 +2,12 @@ import { notFound } from "next/navigation";
 import projectsData from "@/data/Projects.json";
 import { acornSemiBold, acornLight } from "@/public/fonts/font";
 
+export async function generateStaticParams() {
+  const ids = projectsData.map((item) => item.id);
+  return ids.map((id) => ({ id }));
+}
+
+
 export default function ProjectDetail({ params }: { params: { id: string } }) {
   const project = projectsData.find((proj) => proj.id === params.id);
 

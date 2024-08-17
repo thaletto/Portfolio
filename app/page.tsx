@@ -36,7 +36,7 @@ export default function Home() {
                 " text-7xl font-bold sm:text-6xl text-customGreen text-balance"
               }
             >
-              Hi, I'm Laxman.
+              Hi, I&apos;m Laxman.
             </p>
             <p
               className={
