@@ -1,5 +1,5 @@
 export default {
-    basePath: process.env.GITHUB_ACTIONS ? '/thaletto.github.io' : '',
-    assetPrefix: process.env.GITHUB_ACTIONS ? '/thaletto.github.io/' : '',
+    basePath: process.env.GITHUB_ACTIONS ? '/Portfolio' : '',
+    assetPrefix: process.env.GITHUB_ACTIONS ? '/Portfolio/' : '',
     output: 'export'
 };
