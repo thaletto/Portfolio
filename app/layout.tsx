@@ -2,6 +2,7 @@ import "./globals.css";
 import Navbar from "@/components/Navbar";
 import { gtPlanarRegular } from "@/public/fonts/font";
 import type { Metadata } from "next";
+import { Analytics } from '@vercel/analytics/react';
 import Footer from '@/components/footer'
 
 export const metadata: Metadata = {
@@ -19,6 +20,7 @@ export default function RootLayout({
       <body className={gtPlanarRegular.className + " bg-charcoal flex flex-col w-full"}>
         <Navbar />
         <div className="mt-32">{children}</div>
+        <Analytics />
         <Footer />
       </body>
     </html>
