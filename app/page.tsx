@@ -47,7 +47,7 @@ export default function Home() {
       </div>
       <AboutMe />
 
-      <div className="grid grid-cols-1 sm:grid-cols-1 md:grid-cols-2 mx-2 sm:mx-4 md:mx-8 mb-8 gap-6 mt-16">
+      <div className="grid grid-cols-1 sm:grid-cols-1 md:grid-cols-2 mx-4 sm:mx-8 mb-8 gap-6 mt-16">
         <Experience />
         <Education />
         <Skills />

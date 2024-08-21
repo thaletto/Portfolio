@@ -42,7 +42,7 @@ export default function Projects() {
         </p>
       </div>
 
-      <div className="grid grid-cols-1 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 mx-2 sm:mx-4 md:mx-8 mb-8 gap-6 mt-10">
+      <div className="grid grid-cols-1 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 mx-4 sm:mx-8 mb-8 gap-6 mt-10">
         {projects.map((project) => (
           <div
             key={project.id}
