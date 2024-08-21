@@ -1,5 +1,13 @@
 [
   {
+    "name": "Portfolio",
+    "id": "06",
+    "date": "August 2024",
+    "skills": ["Next.js", "React", "Tailwind CSS"],
+    "url": "https://github.com/thaletto/Portfolio/releases/tag/Template",
+    "notes": "A template of this portfolio is available in GitHub release."
+  },
+  {
     "name": "Lung Nodule Detection",
     "id": "05",
     "date": "May 2024",
@@ -12,7 +20,7 @@
     "id": "04",
     "date": "Oct 2023",
     "skills": [
-      "Android App Development",
+      "Android App",
       "Kotlin",
       "Jetpack Compose",
       "Firebase",

@@ -17,3 +17,16 @@ export function calculateDuration(start: Date, end: Date): string {
 
   return durationString || "0 months";
 }
+
+export function calculateAge(dob: Date): string {
+  const today = new Date();
+  let years = today.getFullYear() - dob.getFullYear();
+  let months = today.getMonth() - dob.getMonth();
+  let days = today.getDate() - dob.getDate();
+
+  if (months < 0 || (months === 0 && days < 0)) {
+    years--;
+  }
+
+  return `${years} years old`;
+}

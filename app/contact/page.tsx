@@ -1,9 +1,12 @@
 import Image from "next/image";
 import { acornLight, acornRegular } from "@/public/fonts/font";
+import { calculateAge }  from "@/utils/utils";
 import { MdLocationOn, MdMail } from "react-icons/md";
 import { SiTelegram, SiLinkedin, SiInstagram, SiFacebook, SiThreads, SiLetterboxd, SiGithub, SiLeetcode, SiHuggingface, SiMedium, SiVsco, SiPinterest, SiDribbble } from "react-icons/si";
 
 export default function Contact() {
+    const dob = new Date("19 August 2003");
+    const age = calculateAge(dob);
     return (
         <div>
             {/* Profile Photo */}
@@ -21,6 +24,7 @@ export default function Contact() {
                     <p className={acornRegular.className + " text-4xl md:text-7xl text-customGreen"}>Laxman K R.</p>
                     <p className={acornRegular.className + " text-3xl md:text-5xl"}>a.k.a <span className="text-customGreen">thaletto</span>.</p>
                     <div className="mt-4 space-y-2">
+                        <p className="text-slate-300">{age}</p>
                         <p className="flex items-center text-slate-300"><MdLocationOn className="mr-2 text-2xl text-customGreen"/> Chennai, TN, IN</p>
                         <p className="text-slate-300"><a href="mailto:krlaxman03@gmail.com" target="_blank" rel="noopener noreferrer" className="flex items-center"><MdMail className="mr-2 text-2xl text-customGreen"/> krlaxman03@gmail.com</a></p>
                         <p className="text-slate-300"><a href="https://t.me/thaletto" target="_blank" rel="noopener noreferrer" className="flex items-center"><SiTelegram className="mr-2 text-2xl text-customGreen"/> thaletto</a></p>

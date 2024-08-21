@@ -20,7 +20,7 @@ export default function Navbar() {
   const activeLinkClass = "bg-customGreen text-charcoal rounded-full";
   const inactiveLinkClass = "text-white";
 
-  const url = "https://drive.google.com/file/d/1WhWB6_xdAiincAEi0xVXTQvrQ7R5yOln/view?usp=sharing";
+  const url = "https://drive.google.com/drive/folders/1IJiDdkRsH7XylvYK_YEsuYyePs4YcsK3?usp=sharing";
 
   const dropdownRef = useRef<HTMLDivElement | null>(null);
   useEffect(() => {

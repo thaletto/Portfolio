@@ -1,6 +1,6 @@
 import { acornLight } from "@/public/fonts/font";
 import { MdLocationOn } from "react-icons/md";
-import { FaUniversity } from "react-icons/fa"; // Add this import for the circle icon
+import { FaUniversity } from "react-icons/fa";
 
 interface TimelineProps {
     institution: string,

@@ -49,9 +49,7 @@ export default function Job({
       <p className="text-xl">
         {formattedStartDate} - {formattedEndDate}
       </p>
-      {duration !== "0 months" && (
-        <p className="text-xl">{duration}</p>
-      )}
+      {duration !== "0 months" && <p className="text-xl">{duration}</p>}
       <p className="text-xl flex items-center">
         <MdLocationOn className="mr-1" /> {location}
       </p>
