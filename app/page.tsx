@@ -1,6 +1,3 @@
-'use client';
-
-import { useEffect, useState } from 'react';
 import { acornSemiBold, acornRegular } from "@/public/fonts/font";
 import AboutMe from "@/components/AboutMe";
 import Experience from "@/components/Experience/Experience";
@@ -9,21 +6,6 @@ import Skills from "@/components/Skills";
 import Certification from "@/components/Certification/Certification";
 
 export default function Home() {
-  const [isVisible, setIsVisible] = useState(true);
-
-  useEffect(() => {
-    const handleScroll = () => {
-      if (window.scrollY > 5) {
-        setIsVisible(false);
-      } else {
-        setIsVisible(true);
-      }
-    };
-
-    window.addEventListener('scroll', handleScroll);
-    return () => window.removeEventListener('scroll', handleScroll);
-  }, []);
-
   return (
     <main className="h-full mt-16">
       {/* Title Section */}
