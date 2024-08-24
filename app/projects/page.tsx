@@ -22,7 +22,7 @@ export default async function Projects() {
         {projects.map((project) => (
           <Link href={`/projects/${project.id}`} key={project.id}>
             <div
-              className="cursor-pointer bg-charcoal-light p-4 rounded-lg shadow-md hover:shadow-lg transition-all duration-300 space-y-4 transform hover:scale-90 hover:bg-charcoal-dark"
+              className="cursor-pointer flex flex-col h-full bg-charcoal-light p-4 rounded-lg shadow-md hover:shadow-lg transition-all duration-300 space-y-4 transform hover:scale-90 hover:bg-charcoal-dark"
             >
               <div>
                 <a
