@@ -1,28 +1,40 @@
 import { notFound } from "next/navigation";
-import projectsData from "@/data/Projects.json";
 import { acornSemiBold } from "@/public/fonts/font";
+import { prisma } from "@/lib/prisma";
 
 export async function generateStaticParams() {
-  const ids = projectsData.map((item) => item.id);
-  return ids.map((id) => ({ id }));
+  const projects = await prisma.projects.findMany({
+    select: { id: true }
+  });
+
+  return projects.map((project) => ({ id: project.id }));
 }
 
+export default async function ProjectDetail({ params }: { params: { id: string } }) {
+  const project = await prisma.projects.findFirst({
+    where: {
+      id: params.id
+    }
+  });
 
-export default function ProjectDetail({ params }: { params: { id: string } }) {
-  const project = projectsData.find((proj) => proj.id === params.id);
+  const note = await prisma.notes.findFirst({
+    where: {
+      project_id: params.id
+    }
+  });
 
   if (!project) {
     return notFound();
   }
 
   return (
-    <div className="mt-16 mx-2 sm:mx-4 md:mx-8 mb-8">
+    <div className="mt-16 mx-4 sm:mx-8 mb-8">
       <h1 className={`${acornSemiBold.className} text-customGreen text-5xl mb-4`}>
         {project.name}
       </h1>
       <p className="text-slate-300 text-lg mb-2">Date: {project.date}</p>
       <p className="text-slate-400 mb-6 text-pretty">
-        {project.notes}
+        {note?.note_text}
       </p>
 
       <h2 className={`${acornSemiBold.className} text-2xl text-customGreen mb-4`}>

@@ -1,8 +1,9 @@
 import { acornRegular } from "@/public/fonts/font";
-import experienceData from "@/data/Experience.json";
 import Job from "./Job";
+import { prisma } from "@/lib/prisma";
 
-export default function Experience() {
+export default async function Experience() {
+  const experience = await prisma.experience.findMany();
   return (
     <div className="bg-charcoal-light rounded-lg h-full shadow-lg">
       <p
@@ -11,15 +12,15 @@ export default function Experience() {
         Experience
       </p>
       <div className="px-4">
-        {experienceData.map((job, index) => (
+        {experience.map((job, index) => (
           <Job
             key={index}
             company={job.company}
             type={job.type}
             role={job.role}
-            location={job.location}
-            start={job.start}
-            end={job.end}
+            location={job.location || ""}
+            start={job.start_date}
+            end={job.end_date || null}
           />
         ))}
       </div>

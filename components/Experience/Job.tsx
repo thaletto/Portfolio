@@ -7,8 +7,8 @@ interface JobProps {
   type: string;
   role: string;
   location: string;
-  start: string;
-  end?: string;
+  start: Date;
+  end?: Date | null;
 }
 
 export default function Job({
@@ -19,14 +19,10 @@ export default function Job({
   start,
   end,
 }: JobProps) {
-  const endString = end ? String(end).trim() : "";
-  const isPresent = !endString;
-
+  const isPresent = !end;
   const startDate = new Date(start);
-  const endDate = isPresent ? new Date() : new Date(endString);
-
+  const endDate = isPresent ? new Date() : new Date(end!);
   const duration = calculateDuration(startDate, endDate);
-
   const formattedStartDate = startDate.toLocaleDateString("en-US", {
     year: "numeric",
     month: "long",

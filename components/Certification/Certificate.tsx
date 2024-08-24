@@ -5,7 +5,7 @@ import { LiaCertificateSolid } from "react-icons/lia";
 interface CertificateProps {
   name: string;
   provider: string;
-  date: string;
+  date: Date;
   url: string;
   skills: string[];
 }
@@ -17,6 +17,7 @@ export default function Certificate({
   url,
   skills,
 }: CertificateProps) {
+  const datestring = date.toDateString();
   return (
     <Link href={url} target="_blank" rel="noopener noreferrer">
       <div className="bg-customGreen rounded-lg mb-8 p-4 text-charcoal flex flex-row transition-transform duration-300 hover:scale-90 hover:shadow-lg">
@@ -28,7 +29,7 @@ export default function Certificate({
             <strong>{name}</strong>
           </p>
           <p className="text-lg md:text-xl">{provider}</p>
-          <p className="text-lg md:text-xl">{date}</p>
+          <p className="text-lg md:text-xl">{datestring}</p>
           <div className="flex flex-row items-center mt-1 space-x-2">
             {skills.map((skill, index) => (
               <p
