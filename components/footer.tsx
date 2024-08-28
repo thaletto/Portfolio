@@ -18,7 +18,7 @@ export default function Footer() {
         K R
       </p>
       <p
-        className="cursor-pointer ml-auto mr-8 hidden md:block" // Hidden on small screens, visible on md and up
+        className="cursor-pointer ml-auto mr-8 hidden md:block"
         onMouseEnter={() => setIsHovered(true)}
         onMouseLeave={() => setIsHovered(false)}
       >
