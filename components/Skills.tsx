@@ -32,6 +32,8 @@ import {
   SiExpress,
   SiPostman,
   SiJirasoftware,
+  SiPrisma,
+  SiVercel
 } from "react-icons/si";
 import { FaJava } from "react-icons/fa6";
 import { MdDataExploration, MdAnalytics } from "react-icons/md";
@@ -112,6 +114,8 @@ export default function Skills() {
             <SiMysql title="MySQL" />
             <SiPostman title="Postman"/>
             <SiJirasoftware title="Atlassian JIRA" />
+            <SiPrisma title="Prisma" />
+            <SiVercel title="Vercel" />
             <SiGithub title="GitHub" />
           </div>
         </div>

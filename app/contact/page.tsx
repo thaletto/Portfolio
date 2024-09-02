@@ -16,18 +16,21 @@ import {
   SiVsco,
   SiPinterest,
   SiDribbble,
+  SiX,
+  SiReddit
 } from "react-icons/si";
 
 export default function Contact() {
   const dob = new Date("19 August 2003");
   const age = calculateAge(dob);
+  const imageUrl = "https://ihyabdqqn0nd2hvz.public.blob.vercel-storage.com/images/Profile.jpg";
   return (
     <div>
       {/* Profile Photo */}
       <div className="w-full flex flex-col lg:flex-row items-center justify-center space-y-4 sm:space-y-4 lg:space-y-0 space-x-4 mb-8">
         <div className="w-1/2">
           <Image
-            src="/images/Profile.jpg"
+            src={imageUrl}
             alt="Laxman's photo"
             width={480}
             height={640}
@@ -122,6 +125,26 @@ export default function Contact() {
             >
               <SiFacebook className="mr-2" />
               Laxman K R
+            </a>
+            <a
+              href="https://x.com/thaletto"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="flex items-center"
+              title="X"
+            >
+              <SiX className="mr-2" />
+              thaletto
+            </a>
+            <a
+              href="https://reddit.com/user/thaletto"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="flex items-center"
+              title="Reddit"
+            >
+              <SiReddit className="mr-2" />
+              thaletto
             </a>
             <a
               href="https://letterboxd.com/thaletto"
