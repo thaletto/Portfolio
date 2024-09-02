@@ -2,7 +2,7 @@
 
 Welcome to my personal portfolio application, built using **Next.js** and **Tailwind CSS**. This app showcases my projects, skills, and education, all in a responsive and interactive design.
 
-## thaletto.vercel.app
+**[thaletto.vercel.app](https://thaletto.vercel.app)**
 
 ## Features
 
