@@ -1,4 +1,4 @@
-import { acornRegular } from "@/public/fonts/font";
+import { acornRegular } from "@/lib/fonts/font";
 import Timeline from "./Timeline";
 import { prisma } from "@/lib/prisma";
 

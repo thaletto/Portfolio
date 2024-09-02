@@ -1,6 +1,6 @@
 import "./globals.css";
 import Navbar from "@/components/Navbar";
-import { gtPlanarRegular } from "@/public/fonts/font";
+import { gtPlanarRegular } from "@/lib/fonts/font";
 import type { Metadata } from "next";
 import { Analytics } from '@vercel/analytics/react';
 import Footer from '@/components/footer'

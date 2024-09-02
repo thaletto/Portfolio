@@ -1,4 +1,4 @@
-import { acornRegular } from "@/public/fonts/font";
+import { acornRegular } from "@/lib/fonts/font";
 import Certificate from "./Certificate";
 import { prisma } from "@/lib/prisma";
 

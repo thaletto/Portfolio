@@ -1,4 +1,4 @@
-import { acornLight } from "@/public/fonts/font";
+import { acornLight } from "@/lib/fonts/font";
 import Link from "next/link";
 import { LiaCertificateSolid } from "react-icons/lia";
 

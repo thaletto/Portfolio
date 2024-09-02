@@ -2,7 +2,7 @@
 
 import { MdCopyright } from "react-icons/md";
 import { SiNextdotjs, SiTailwindcss, SiVercel } from "react-icons/si";
-import { tnw, acornLight, gtPlanarRegular } from "@/public/fonts/font";
+import { tnw, acornLight, gtPlanarRegular } from "@/lib/fonts/font";
 import { useState } from "react";
 
 export default function Footer() {

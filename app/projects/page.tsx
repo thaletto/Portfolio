@@ -1,4 +1,4 @@
-import { acornSemiBold, acornLight } from "@/public/fonts/font";
+import { acornSemiBold, acornLight } from "@/lib/fonts/font";
 import { prisma } from "@/lib/prisma";
 import Link from "next/link";
 

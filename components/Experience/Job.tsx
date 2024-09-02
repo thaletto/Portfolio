@@ -1,5 +1,5 @@
 import { calculateDuration } from "@/utils/utils";
-import { acornLight } from "@/public/fonts/font";
+import { acornLight } from "@/lib/fonts/font";
 import { MdLocationOn } from "react-icons/md";
 
 interface JobProps {

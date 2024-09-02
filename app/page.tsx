@@ -1,4 +1,4 @@
-import { acornSemiBold, acornRegular } from "@/public/fonts/font";
+import { acornSemiBold, acornRegular } from "@/lib/fonts/font";
 import AboutMe from "@/components/AboutMe";
 import Experience from "@/components/Experience/Experience";
 import Education from "@/components/Education/Education";

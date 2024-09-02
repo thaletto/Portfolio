@@ -1,5 +1,5 @@
 import { TbError404 } from "react-icons/tb";
-import {acornRegular} from '@/public/fonts/font';
+import {acornRegular} from '@/lib/fonts/font';
 
 export default function NotFound() {
   return (

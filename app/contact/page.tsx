@@ -1,5 +1,5 @@
 import Image from "next/image";
-import { acornLight, acornRegular } from "@/public/fonts/font";
+import { acornLight, acornRegular } from "@/lib/fonts/font";
 import { calculateAge } from "@/utils/utils";
 import { MdLocationOn, MdMail } from "react-icons/md";
 import {

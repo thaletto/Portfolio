@@ -2,7 +2,7 @@ import { FaGithub, FaGoogleDrive, FaGlobe } from "react-icons/fa";
 
 export default function VisitProject({ url }: { url: string | null }) {
   if (!url || url === "#") {
-    return null; // Return nothing if the URL is "#" or null
+    return null;
   }
 
   let label;

@@ -1,4 +1,4 @@
-import { acornRegular, acornLight } from "@/public/fonts/font";
+import { acornRegular, acornLight } from "@/lib/fonts/font";
 import {
   SiAndroidstudio,
   SiGooglecolab,

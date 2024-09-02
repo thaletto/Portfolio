@@ -1,15 +1,7 @@
-import { notFound } from "next/navigation";
-import { acornSemiBold } from "@/public/fonts/font";
 import { prisma } from "@/lib/prisma";
+import { notFound } from "next/navigation";
+import { acornSemiBold } from "@/lib/fonts/font";
 import VisitProject from "@/components/VisitProject";
-
-export async function generateStaticParams() {
-  const projects = await prisma.projects.findMany({
-    select: { id: true },
-  });
-
-  return projects.map((project) => ({ id: project.id }));
-}
 
 export default async function ProjectDetail({
   params,
@@ -61,4 +53,19 @@ export default async function ProjectDetail({
       <VisitProject url={project.url} />
     </div>
   );
+}
+
+// ISR
+export async function generateStaticParams() {
+  const projects = await prisma.projects.findMany({
+    select: { id: true },
+  });
+
+  return projects.map((project) => ({ id: project.id }));
+}
+
+export async function generateMetadata() {
+  return {
+    revalidate: 60, // Revalidate this page every 60 seconds
+  };
 }
