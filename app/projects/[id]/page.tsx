@@ -32,7 +32,7 @@ export default async function ProjectDetail({
         {project.name}
       </h1>
       <p className="text-slate-300 text-lg mb-2">Date: {project.date}</p>
-      <p className="text-slate-400 mb-6 text-pretty">{note?.note_text}</p>
+      <p className="bg-charcoal-light p-4 rounded-lg mb-6 text-pretty">{note?.note_text}</p>
 
       <h2
         className={`${acornSemiBold.className} text-2xl text-customGreen mb-4`}
