@@ -14,8 +14,7 @@ const config: Config = {
           light: "#234138",
           DEFAULT: "#233831",
         },
-        customGreen: "#8FDCC2",
-        goldenYellow: "#FFDF00",
+        customGreen: "#8FDCC2"
       },
       boxShadow: {
         custom: "0 4px 30px rgba(0, 0, 0, 0.1)",
