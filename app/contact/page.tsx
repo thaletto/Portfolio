@@ -12,7 +12,6 @@ import {
   SiGithub,
   SiLeetcode,
   SiHuggingface,
-  SiMedium,
   SiVsco,
   SiPinterest,
   SiDribbble,
@@ -20,6 +19,7 @@ import {
   SiReddit,
   SiStackoverflow
 } from "react-icons/si";
+import { FaMediumM } from "react-icons/fa";
 
 export default function Contact() {
   const dob = new Date("19 August 2003");
@@ -190,7 +190,7 @@ export default function Contact() {
               className="flex items-center"
               title="Medium"
             >
-              <SiMedium className="mr-2" /> thaletto
+              <FaMediumM className="mr-2" /> thaletto
             </a>
             <a
               href="https://github.com/thaletto"
