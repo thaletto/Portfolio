@@ -17,7 +17,8 @@ import {
   SiPinterest,
   SiDribbble,
   SiX,
-  SiReddit
+  SiReddit,
+  SiStackoverflow
 } from "react-icons/si";
 
 export default function Contact() {
@@ -217,6 +218,15 @@ export default function Contact() {
               title="Hugging Face"
             >
               <SiHuggingface className="mr-2" /> thaletto
+            </a>
+            <a
+              href="https://stackoverflow.com/users/27195767"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="flex items-center"
+              title="Stack Overflow"
+            >
+              <SiStackoverflow className="mr-2" /> Laxman
             </a>
             <a
               href="https://dribbble.com/thaletto"
