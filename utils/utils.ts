@@ -30,3 +30,22 @@ export function calculateAge(dob: Date): string {
 
   return `${years} years old`;
 }
+
+const allowedHosts = [
+  'github.com',
+  'drive.google.com'
+];
+
+export const getHostFromUrl = (url: string): string | null => {
+  try {
+    const parsedUrl = new URL(url);
+    return parsedUrl.host;
+  } catch (error) {
+    console.error('Invalid URL:', url);
+    return null;
+  }
+};
+
+export const isHostAllowed = (host: string | null): boolean => {
+  return host !== null && allowedHosts.includes(host);
+};

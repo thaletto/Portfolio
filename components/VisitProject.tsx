@@ -1,4 +1,5 @@
 import { FaGithub, FaGoogleDrive, FaGlobe } from "react-icons/fa";
+import { getHostFromUrl, isHostAllowed } from "@/utils/utils";
 
 export default function VisitProject({ url }: { url: string | null }) {
   if (!url || url === "#") {
@@ -8,16 +9,26 @@ export default function VisitProject({ url }: { url: string | null }) {
   let label;
   let icon;
 
-  if (url.includes("github.com")) {
-    const repoName = url.split("github.com/")[1];
-    label = repoName;
-    icon = <FaGithub />;
-  } else if (url.includes("drive.google.com")) {
-    label = "Google Drive";
-    icon = <FaGoogleDrive />;
-  } else {
-    label = "Visit Project";
+  // Parse URL and get the host
+  const host = getHostFromUrl(url);
+
+  // Check if the host is in the whitelist
+  if (!isHostAllowed(host)) {
+    label = "Invalid URL";
     icon = <FaGlobe />;
+  } else {
+    // Determine label and icon based on the host
+    if (host === 'github.com') {
+      const repoName = url.split("github.com/")[1];
+      label = repoName;
+      icon = <FaGithub />;
+    } else if (host === 'drive.google.com') {
+      label = "Google Drive";
+      icon = <FaGoogleDrive />;
+    } else {
+      label = "Visit Project";
+      icon = <FaGlobe />;
+    }
   }
 
   return (

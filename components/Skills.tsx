@@ -33,7 +33,9 @@ import {
   SiPostman,
   SiJirasoftware,
   SiPrisma,
-  SiVercel
+  SiVercel,
+  SiGit,
+  SiJenkins
 } from "react-icons/si";
 import { FaJava } from "react-icons/fa6";
 import { MdDataExploration, MdAnalytics } from "react-icons/md";
@@ -102,7 +104,7 @@ export default function Skills() {
         {/* Tools */}
         <div className="mt-8">
           <p className={acornLight.className + " text-2xl text-customGreen"}>
-            Tools and Software
+            Tools & Software
           </p>
           <div className={iconClass}>
             <SiVisualstudiocode title="Visual Studio Code" />
@@ -115,7 +117,17 @@ export default function Skills() {
             <SiPostman title="Postman"/>
             <SiJirasoftware title="Atlassian JIRA" />
             <SiPrisma title="Prisma" />
+          </div>
+        </div>
+
+        {/* Deployment */}
+        <div className="mt-8">
+          <p className={acornLight.className + " text-2xl text-customGreen"}>
+            Deployment
+          </p>
+          <div className={iconClass}>
             <SiVercel title="Vercel" />
+            <SiGit title="Git" />
             <SiGithub title="GitHub" />
           </div>
         </div>
