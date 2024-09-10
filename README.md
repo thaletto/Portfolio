@@ -20,6 +20,6 @@ Welcome to my personal portfolio application, built using **Next.js** and **Tail
 - **TypeScript**
 - **Vercel** for deployment
 - **Prisma** for ORM
-- **PostgreSQL by Neon** for database
+- **PostgreSQL by Supabase** for database
 
 [![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/import/project?template=https://github.com/thaletto/Portfolio)
