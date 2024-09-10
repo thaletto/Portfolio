@@ -4,7 +4,7 @@ import { prisma } from "@/lib/prisma";
 
 
 export default async function Certification() {
-    const certificates = await prisma.certificates.findMany();
+    const certificates = await prisma.cERTIFICATES.findMany();
 
     return (
         <div className="bg-charcoal-light rounded-lg h-full shadow-lg">

@@ -8,15 +8,15 @@ export default async function ProjectDetail({
 }: {
   params: { id: string };
 }) {
-  const project = await prisma.projects.findFirst({
+  const project = await prisma.pROJECTS.findFirst({
     where: {
-      id: params.id,
+      id: BigInt(params.id),
     },
   });
 
-  const note = await prisma.notes.findFirst({
+  const note = await prisma.nOTES.findFirst({
     where: {
-      project_id: params.id,
+      project_id: BigInt(params.id),
     },
   });
 
@@ -57,11 +57,11 @@ export default async function ProjectDetail({
 
 // ISR
 export async function generateStaticParams() {
-  const projects = await prisma.projects.findMany({
+  const projects = await prisma.pROJECTS.findMany({
     select: { id: true },
   });
 
-  return projects.map((project) => ({ id: project.id }));
+  return projects.map((project) => ({ id: project.id.toString() }));
 }
 
 export async function generateMetadata() {

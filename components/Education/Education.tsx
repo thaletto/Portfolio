@@ -3,7 +3,7 @@ import Timeline from "./Timeline";
 import { prisma } from "@/lib/prisma";
 
 export default async function Education() {
-  const education = await prisma.education.findMany();
+  const education = await prisma.eDUCATION.findMany();
 
   return (
     <div className="bg-charcoal-light rounded-lg h-full shadow-lg">

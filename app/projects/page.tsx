@@ -3,7 +3,7 @@ import { prisma } from "@/lib/prisma";
 import Link from "next/link";
 
 export default async function Projects() {
-  const projects = await prisma.projects.findMany();
+  const projects = await prisma.pROJECTS.findMany();
 
   return (
     <div className="mt-16">
@@ -19,7 +19,7 @@ export default async function Projects() {
       </div>
 
       <div className="grid grid-cols-1 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 mx-4 sm:mx-8 mb-8 gap-6 mt-10">
-        {projects.map((project) => (
+        {projects.sort((a, b) => b.id.toString().localeCompare(a.id.toString())).map((project) => (
           <Link href={`/projects/${project.id}`} key={project.id}>
             <div
               className="cursor-pointer flex flex-col h-full bg-charcoal-light p-4 rounded-lg shadow-md hover:shadow-lg transition-all duration-300 space-y-4 transform hover:scale-90 hover:bg-charcoal-dark"

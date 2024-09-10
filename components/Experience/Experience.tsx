@@ -3,7 +3,7 @@ import Job from "./Job";
 import { prisma } from "@/lib/prisma";
 
 export default async function Experience() {
-  const experience = await prisma.experience.findMany();
+  const experience = await prisma.eXPERIENCE.findMany();
   return (
     <div className="bg-charcoal-light rounded-lg h-full shadow-lg">
       <p
