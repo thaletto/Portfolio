@@ -8,8 +8,7 @@ import {
   MdConstruction,
   MdArticle,
   MdContacts,
-  MdFileDownload,
-  MdChromeReaderMode
+  MdFileDownload
 } from "react-icons/md";
 
 export default function Navbar() {
@@ -56,11 +55,8 @@ export default function Navbar() {
           </button>
           {isDropdownOpen && (
             <div className="absolute left-1/2 top-full transform -translate-x-1/2 mt-2 bg-customGreen text-charcoal shadow-custom rounded-lg p-2">
-              <Link href="https://read.cv/thaletto" target="_blank" rel="noopener noreferrer" className="block px-4 py-2 hover:bg-charcoal-light hover:text-customGreen rounded-lg flex items-center">
-                <MdChromeReaderMode className="mr-2"/> Resume
-              </Link>
               <Link href={url} target="_blank" rel="noopener noreferrer" className="block px-4 py-2 hover:bg-charcoal-light hover:text-customGreen rounded-lg flex items-center">
-                <MdFileDownload className="mr-2"/> Resume
+                <MdFileDownload className="mr-2"/> Download
               </Link>
             </div>
           )}

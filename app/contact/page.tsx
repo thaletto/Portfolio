@@ -1,4 +1,6 @@
+"use client";
 import Image from "next/image";
+import { useState, useEffect } from "react";
 import { acornLight, acornRegular } from "@/lib/fonts/font";
 import { calculateAge } from "@/utils/utils";
 import { MdLocationOn, MdMail } from "react-icons/md";
@@ -17,15 +19,23 @@ import {
   SiDribbble,
   SiX,
   SiReddit,
-  SiStackoverflow
+  SiStackoverflow,
 } from "react-icons/si";
 import { FaMediumM } from "react-icons/fa";
 import SupportWidget from "@/components/SupportWidget";
+import { getPublicUrl } from "@/lib/supabase";
 
 export default function Contact() {
   const dob = new Date("19 August 2003");
   const age = calculateAge(dob);
-  const imageUrl = "https://ihyabdqqn0nd2hvz.public.blob.vercel-storage.com/images/Profile.jpg";
+
+  const [imageUrl, setImageUrl] = useState("");
+  useEffect(() => {
+    const filePath = "images/Profile.jpg";
+    const url = getPublicUrl(filePath);
+    setImageUrl(url);
+  }, []);
+
   return (
     <>
       <div>
@@ -43,7 +53,8 @@ export default function Contact() {
           <div>
             <p
               className={
-                acornRegular.className + " text-4xl md:text-7xl text-customGreen"
+                acornRegular.className +
+                " text-4xl md:text-7xl text-customGreen"
               }
             >
               Laxman K R.
@@ -84,7 +95,7 @@ export default function Contact() {
         </div>
         {/* Links */}
 
-        <div className="grid grid-cols-1 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-2 mx-2 sm:mx-4 md:mx-8 mb-8 gap-6 mt-10 text-customGreen">
+        <div className="grid grid-cols-1 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-2 mx-4 sm:mx-8 mb-8 gap-6 mt-10 text-customGreen">
           {/* Follow */}
           <div className="bg-charcoal-light p-4 rounded-lg">
             <p className={acornLight.className + " text-4xl"}>Follow on</p>
