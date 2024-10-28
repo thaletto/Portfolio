@@ -1,25 +1,20 @@
-# Portfolio App
+# Portfolio
 
-Welcome to my personal portfolio application, built using **Next.js** and **Tailwind CSS**. This app showcases my projects, skills, and education, all in a responsive and interactive design.
+[![Portfolio Website Screenshot](https://github.com/thaletto/Portfolio/blob/bcd350885284ba6d3d89e33b6df0541c0c0d024f/.github/portfolio.jpg)](https://thaletto.vercel.app)
+
+Welcome to my portfolio website, a place to dump my thoughts and others to stalk me.
 
 **[thaletto.vercel.app](https://thaletto.vercel.app)**
 
-## Features
+## Tech Stack
 
-- **Responsive Design**: The application is fully responsive, optimized for both desktop and mobile devices.
-- **Interactive Timeline**: Displays education history with details on hover.
-- **Project Showcase**: A dynamic list of projects that includes titles, dates, and relevant skills.
-- **Custom Design**: Styled using Tailwind CSS with custom fonts and colors.
-- **Smooth Navigation**: Seamless page transitions with a navbar that adjusts to the screen width.
-
-## Technologies Used
-
-- **Next.js** (version 14+)
-- **React**
-- **Tailwind CSS**
-- **TypeScript**
-- **Vercel** for deployment
-- **Prisma** for ORM
-- **PostgreSQL by Supabase** for database
+| Category            | Tool / Technology            |
+|---------------------|------------------------------|
+| Frontend            | **Next.js** v14 App Router   |
+| Styling             | **Tailwind CSS**             |
+| Language            | **TypeScript**               |
+| Hosting             | **Vercel**                   |
+| ORM                 | **Prisma**                   |
+| Database            | **PostgreSQL by Supabase**   |
 
 [![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/import/project?template=https://github.com/thaletto/Portfolio)
